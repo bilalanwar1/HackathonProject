@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const StatsSection = () => {
+const ClientSection = () => {
   return (
     <div className="bg-black text-white py-12 pt-4 mb-4">
       <div className="container mx-auto flex justify-around items-center space-x-4">
@@ -23,15 +23,11 @@ const StatsSection = () => {
         <div className="flex flex-col items-center">
           <Image src="/Group-1.png" alt="Page" width={40} height={40} className="mb-4" />
           <p className="text-4xl font-bold">220</p>
-<<<<<<< HEAD
-          <p className="text-lg">Happy Customers </p>
-=======
-          <p className="text-lg">Happy Customers</p>
->>>>>>> e128186c34899842aa7d9e3b1cd96cda469f7517
+          <p className="text-lg">Happy Customers</p> {/* Choose the correct version */}
         </div>
       </div>
     </div>
   );
 };
 
-export default StatsSection;
+export default ClientSection;
