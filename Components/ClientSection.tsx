@@ -23,7 +23,7 @@ const StatsSection = () => {
         <div className="flex flex-col items-center">
           <Image src="/Group-1.png" alt="Page" width={40} height={40} className="mb-4" />
           <p className="text-4xl font-bold">220</p>
-          <p className="text-lg">Happy Customers</p>
+          <p className="text-lg">Happy Customers </p>
         </div>
       </div>
     </div>
