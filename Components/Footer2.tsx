@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Image from 'next/image';
 
-const Footer = () => {
+const Footer2 = () => {
   return (
     <>
       <div className="bg-black text-white py-8">
@@ -28,12 +29,9 @@ const Footer = () => {
           <div>
             <h2 className="font-bold text-xl mb-4">Useful Links</h2>
             <ul>
-              <li className="mb-2">About</li>
-              <li className="mb-2">News</li>
-              <li className="mb-2">Partners</li>
-              <li className="mb-2">Team</li>
-              <li className="mb-2">Menu</li>
-              <li className="mb-2">Contact</li>
+              {['About', 'News', 'Partners', 'Team', 'Menu', 'Contact'].map((link, index) => (
+                <li key={index} className="mb-2">{link}</li>
+              ))}
             </ul>
           </div>
           
@@ -41,39 +39,29 @@ const Footer = () => {
           <div>
             <h2 className="font-bold text-xl mb-4">Help?</h2>
             <ul>
-              <li className="mb-2">FAQ</li>
-              <li className="mb-2">Term & Condition</li>
-              <li className="mb-2">Reporting</li>
-              <li className="mb-2">Documentation</li>
-              <li className="mb-2">Support Policy</li>
-              <li className="mb-2">Privacy</li>
+              {['FAQ', 'Term & Condition', 'Reporting', 'Documentation', 'Support Policy', 'Privacy'].map((help, index) => (
+                <li key={index} className="mb-2">{help}</li>
+              ))}
             </ul>
           </div>
           
           {/* Recent Post Section */}
           <div>
             <h2 className="font-bold text-xl mb-4">Recent Post</h2>
-            <div className="flex items-center mb-4">
-              <img src="/image1.jpg" alt="Post 1" className="w-16 h-16 mr-4"/>
-              <div>
-                <p className="font-bold">Is fastfood good for your body?</p>
-                <p>February 28, 2022</p>
+            {[1, 2, 3].map((post, index) => (
+              <div key={index} className="flex items-center mb-4">
+                <Image src={`/img${post}.jpg`} alt={`Post ${post}`} width={64} height={64} className="w-16 h-16 mr-4"/>
+                <Image src={`/img${post}.jpg`} alt="Post 2" width={64} height={64} className="w-16 h-16 mr-4"/>
+                <Image src={`/img${post}.jpg`} alt="Post 3" width={64} height={64} className="w-16 h-16 mr-4"/>
+
+                <div>
+                  <p className="font-bold">
+                    {post === 1 ? 'Is fastfood good for your body?' : post === 2 ? 'Change your food habit with organic food' : 'Do you like fastfood for your life?'}
+                  </p>
+                  <p>February 28, 2022</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center mb-4">
-              <img src="/image1.jpg" alt="Post 2" className="w-16 h-16 mr-4"/>
-              <div>
-                <p className="font-bold">Change your food habit with organic food</p>
-                <p>February 28, 2022</p>
-              </div>
-            </div>
-            <div className="flex items-center mb-4">
-              <img src="/image1.jpg" alt="Post 3" className="w-16 h-16 mr-4"/>
-              <div>
-                <p className="font-bold">Do you like fastfood for your life?</p>
-                <p>February 28, 2022</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -82,13 +70,13 @@ const Footer = () => {
       <div className="bg-customGray text-white py-4">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <p className="text-sm text-center md:text-left mb-4 md:mb-0">
-            Copyright © 2022 by Ayeman. All Rights Reserved.
+            Copyright &copy; 2022 by Ayeman. All Rights Reserved.
           </p>
           <div className="flex space-x-4">
             <FaTwitter className="text-xl hover:text-blue-500 cursor-pointer" />
-            <FaFacebook className="text-xl hover:text-blue-700 cursor-pointer" />
-            <FaInstagram className="text-xl hover:text-pink-500 cursor-pointer" />
-            <FaLinkedin className="text-xl hover:text-blue-600 cursor-pointer" />
+            <FaFacebook className="text-xl hover:text-blue-500 cursor-pointer" />
+            <FaInstagram className="text-xl hover:text-blue-500 cursor-pointer" />
+            <FaLinkedin className="text-xl hover:text-blue-500 cursor-pointer" />
           </div>
         </div>
       </div>
@@ -96,4 +84,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

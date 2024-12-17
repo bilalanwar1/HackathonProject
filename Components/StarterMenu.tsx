@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // Define a type for the item prop to ensure it's structured properly
 type MenuItem = {
@@ -22,7 +23,7 @@ const StarterMenu: React.FC<StarterMenuProps> = ({ title, items, imageUrl, rever
       <div className="w-[1320px] h-[628px] bg-white mt-6 overflow-hidden flex">
         {/* Image Section */}
         <div className={`w-[448px] h-[626px] flex-shrink-0 ${reverse ? 'order-2' : ''}`}>
-          <img
+          <Image
             src={imageUrl}
             alt="StarterMenu"
             className="w-full h-full object-cover rounded-lg"

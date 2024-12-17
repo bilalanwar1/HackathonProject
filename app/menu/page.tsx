@@ -59,8 +59,6 @@ const App = () => {
     },
   ];
 
-<<<<<<< HEAD
-=======
   const menuItems3 = [
     {
       name: 'Optic Big Breakfast Combo Menu',
@@ -117,7 +115,6 @@ const App = () => {
     },
   ];
 
->>>>>>> e128186c34899842aa7d9e3b1cd96cda469f7517
   return (
     <>
       <div>
@@ -139,18 +136,14 @@ const App = () => {
       <div>
         <StarterMenu
           title="Dessert"
-          items={menuItems2}
+          items={menuItems3}
           imageUrl="/img4.jpg"
-<<<<<<< HEAD
-=======
-          
->>>>>>> e128186c34899842aa7d9e3b1cd96cda469f7517
         />
       </div>
       <div>
         <StarterMenu
           title="Drinks"
-          items={menuItems2}
+          items={menuItems4}
           imageUrl="/img3.jpg"
           reverse // Pass the reverse prop to change layout
         />

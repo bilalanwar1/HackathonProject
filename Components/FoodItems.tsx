@@ -2,22 +2,21 @@ import React from "react";
 import Image from "next/image";
 import { Great_Vibes } from 'next/font/google';
 
-
 // Import the font with the desired settings
 const greatVibesFont = Great_Vibes({
-    weight: '400', // You can specify the weight if needed
-    subsets: ['latin'], // Specify the subset if needed
-  });
+  weight: '400', // You can specify the weight if needed
+  subsets: ['latin'], // Specify the subset if needed
+});
 
 const FoodItems = () => {
   return (
     <div className="bg-black">
-        <p className="{`${greatVibesFont.className} text-customOrange text-center pt-8 text-[24px] md:text-[32px]`}"> Food Category</p>
+      <p className={`${greatVibesFont.className} text-customOrange text-center pt-8 text-[24px] md:text-[32px]`}>Food Category</p>
       <h2 className="text-3xl font-bold text-center text-white mb-8">
         <span className="text-customOrange">Ch</span>oose Food Item
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <div className=" rounded-lg p-4 relative">
+        <div className="rounded-lg p-4 relative">
           <Image
             src="/image9.png" // Replace with your actual image path
             alt="Fast Food Dish"
@@ -33,7 +32,7 @@ const FoodItems = () => {
           </div>
         </div>
         {/* Add 3 more items with similar structure, using different image paths */}
-        <div className=" rounded-lg p-4">
+        <div className="rounded-lg p-4">
           <Image
             src="/image10.png" // Replace with your actual image path
             alt="Pizza"
@@ -42,7 +41,7 @@ const FoodItems = () => {
             className="w-full h-auto"
           />
         </div>
-        <div className=" rounded-lg p-4">
+        <div className="rounded-lg p-4">
           <Image
             src="/image11.png" // Replace with your actual image path
             alt="Burger"
@@ -51,7 +50,7 @@ const FoodItems = () => {
             className="w-full h-auto"
           />
         </div>
-        <div className=" rounded-lg p-4">
+        <div className="rounded-lg p-4">
           <Image
             src="/image12.png" // Replace with your actual image path
             alt="Pasta"

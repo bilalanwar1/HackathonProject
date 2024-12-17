@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="pt-8 pl-2 text-white bg-black w-full md:w-[50%]">
           {/* Apply the custom font directly using greatVibesFont.className */}
           <p className={`${greatVibesFont.className} text-customOrange text-[24px] md:text-[32px]`}>
-            It's Quick & Amusing!
+            It&apos;s Quick & Amusing!
           </p>
           <h1 className="font-bold text-3xl md:text-5xl">
             <span className="text-customOrange">Th</span>e Art of speed

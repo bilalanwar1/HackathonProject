@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import img6 from '../public/img6.jpg';
-import img7 from '../public/img7.jpg';
-import img8 from '../public/img8.jpg';
 
 const AboutSection = () => {
   return (
