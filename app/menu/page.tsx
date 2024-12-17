@@ -1,5 +1,5 @@
 import React from 'react';
-import StarterMenu from '@/Components/StarterMenu';
+import StarterMenu from '@/Components/StarterMenu'; // Import the StarterMenu component
 import ClientSection from '@/Components/ClientSection';
 
 const App = () => {
@@ -122,6 +122,8 @@ const App = () => {
           title="Starter Menu"
           items={menuItems}
           imageUrl="/img2.jpg"
+          width={448}  // Set the image width
+          height={626} // Set the image height
         />
       </div>
       <div>
@@ -130,6 +132,8 @@ const App = () => {
           items={menuItems2}
           imageUrl="/img3.jpg"
           reverse // Pass the reverse prop to change layout
+          width={448}  // Set the image width
+          height={626} // Set the image height
         />
       </div>
       <ClientSection />
@@ -138,6 +142,8 @@ const App = () => {
           title="Dessert"
           items={menuItems3}
           imageUrl="/img4.jpg"
+          width={448}  // Set the image width
+          height={626} // Set the image height
         />
       </div>
       <div>
@@ -146,6 +152,8 @@ const App = () => {
           items={menuItems4}
           imageUrl="/img3.jpg"
           reverse // Pass the reverse prop to change layout
+          width={448}  // Set the image width
+          height={626} // Set the image height
         />
       </div>
     </>

@@ -15,9 +15,11 @@ type StarterMenuProps = {
   items: MenuItem[];
   imageUrl: string;
   reverse?: boolean; // Optional prop to reverse the layout
+  width: number;  // New prop for image width
+  height: number; // New prop for image height
 };
 
-const StarterMenu: React.FC<StarterMenuProps> = ({ title, items, imageUrl, reverse }) => {
+const StarterMenu: React.FC<StarterMenuProps> = ({ title, items, imageUrl, reverse, width, height }) => {
   return (
     <div className="flex justify-center items-center min-h-screen ">
       <div className="w-[1320px] h-[628px] bg-white mt-6 overflow-hidden flex">
@@ -27,6 +29,8 @@ const StarterMenu: React.FC<StarterMenuProps> = ({ title, items, imageUrl, rever
             src={imageUrl}
             alt="StarterMenu"
             className="w-full h-full object-cover rounded-lg"
+            width={width}  // Set width
+            height={height} // Set height
           />
         </div>
 
